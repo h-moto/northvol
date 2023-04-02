@@ -10,7 +10,7 @@ class OfferController extends Controller
 
     public function index(Offer $offer)
     {
-        return view('offer/index')->with(['offer' => $offer->get()]);
+        return view('offer/index')->with(['offers' => $offer ->get()]);
     }
 
 }
